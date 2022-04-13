@@ -1,6 +1,5 @@
 /*Goggle fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,16 +7,15 @@
 }
 html{
     font-size: 62.5%;/*1rem = a 10px*/
-
 }
 body{
     font-family: 'Montserrat Alternates', sans-serif;;
-    background-image:linear-gradient(to top, #800 0%, #e20303);
+    background-image:linear-gradient(to top, rgb(189, 184, 184) 0%, #fff);
 }  
 h4 {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: #fff;
+    color: #000;
     display: flex;
     justify-content: center;
 } 
@@ -29,14 +27,14 @@ header{
     max-width: 114rem;
     margin: 2rem auto;
 }
-
 header .container {
     display: flex;
     justify-content: center; 
 }
-.logo {
+.navbar-brand {
+    text-decoration: none;
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     width: 80%;
     margin-left: 2rem;
@@ -45,48 +43,40 @@ header .container {
     display: flex;
     align-items: center;
 }
-.logo span {
+.navbar-brand span {
     transition: 0.5s linear;
 }
-.logo:hover span:nth-child(1) {
+.navbar-brand:hover span:nth-child(1) {
     margin-right: 5px;
 }
-.logo:hover span:nth-child(2){
+.navbar-brand:hover span:nth-child(2){
     content:" ";
 }
-.logo:hover span:nth-child(3) {
+.navbar-brand:hover span:nth-child(3) {
     margin-left: 5px;
 }
-.logo:hover span {
+.navbar-brand:hover span {
     color: #000;
     text-shadow:  
-    0 0 10px #000
-    0 0 20px #000
-    0 0 40px #000
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff
     ;
 }
-
-.nav-menu{
-    width: 100%;
+.navbar {
+    background-color: #e20303;
+}
+.collapse {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
 }
-
-.menu-list {
-    list-style: none;
-}
-.menu-items{
-    font-weight: bold;
+.nav-link {
+    margin: 0 3rem;
+    font-size: 1.5rem;
     color: #fff;
-    font-size: 2rem;
     text-decoration: none;
 }
-.menu-items:hover {
-    color: #000;
-}
 /*---------------Fin del header---------------*/
-
 /*Tutulo principal*/
 .background-title {
     text-align: center;
@@ -108,22 +98,31 @@ header .container {
 }
 .background-title h1 {
     font-size: 18rem;
-    border: 700px;
 }
 /*---------------Fin del titulo principal---------------*/
 /*---------------Inicio del main---------------*/
 h3 {
     text-align: center;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    color: #fff;
+    color: #000;
     margin: 2rem 0 2rem 2rem;
 }
 .parr-text {
     font-size: 1.8rem;
-    color: #fff;
+    color: #000;
     text-align: justify;  
+}
+#carouselExampleFade {
+    max-width: 600px;
+    margin:4rem auto 6rem;
+}
+#carouselExampleIndicators{
+    max-width: 500px;
+    margin:4rem auto 
+
 }
 .img-align-container .parr-text{
     margin-left: 3rem;
@@ -133,23 +132,19 @@ h3 {
     justify-content: center;
     flex-wrap: wrap;
 }
-.img-item { 
-    width: 40% ;
+.img-item, .carousel { 
+    width: 50% ;
     margin: 0 auto;
     padding: 1rem;
     display: flex;
-    transition: all 1s;
-}
-.img-item:hover {
-    transform: scale(1.1);
 }
 .img-align-container {
     display: flex;
     justify-content: center ;
 }
-
 .img-align {
     width: 100%;
+    margin: auto;
     display: flex;
     justify-content: center;
 }
@@ -163,12 +158,12 @@ h3 {
     font-size: 1.5rem;
     color: #fff;
     text-align: justify;
-    margin: 1rem 2rem;
-    
+    margin: 1rem 2rem;   
 }
 /*---------------Grid container---------------*/
 .grid-container {
     display: grid;
+    
     grid-template-areas: 
     "grid-item-01 grid-item-02 grid-item-03"
     "grid-item-04 grid-item-05 grid-item-06"
@@ -216,14 +211,10 @@ h3 {
 .grid-img {
     width: 90%;
     border-radius: 1rem;
-    transition: all 1s;
-}
-.grid-img:hover {
-    transform: scale(1.1);
 }
 .grid-parr-text {
     margin: 2rem 0;
-    color: #fff;
+    color: #000;
     font-size: 1.6rem;
     text-align: justify;
     display: flex;
@@ -231,71 +222,73 @@ h3 {
 }
 /*---------------Fin del grid---------------*/
 /*---------------Fin del main---------------*/
-
 /*---------------Inicio del footer---------------*/
 .footer-container {
-    background-color: #800 0%;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     
 }
 .footer-menu {
     width: 100%;
-    margin: 1rem 0;
+    margin: .5rem 0;
 }
 .footer-menu .footer-menu-list {
     list-style: none;
 }
 .footer-menu .footer-menu-items{
     text-decoration: none;
-    color: #fff;
+    color: #000;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
     font-size: 1.6rem;
 }
 /*---------------Fin del footer---------------*/
-    /*---------------Media Queries--------------- */
+/*---------------Media Queries--------------- */
 
 @media only screen and (min-width: 250px) and (max-width: 691.98px){
     .container{
         width: 100%;;
     }
-    .logo {
+    .navbar-brand {
+        text-decoration: none;
+        color: #fff;
         font-size: 1.5rem;
-    } 
-    .nav-menu{
-        flex-direction: column;
+        font-weight: bold;
+        width: 80%;
+        margin-left: 2rem;
+        letter-spacing: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
     }
-    .nav-menu .menu-list {
-        padding: 0.2rem;
+    .navbar-brand span {
+        transition: 0.5s linear;
+    }
+    .navbar-brand:hover span:nth-child(1) {
+        margin-right: 5px;
+    }
+    .navbar-brand:hover span:nth-child(2){
+        content:" ";
+    }
+    .navbar-brand:hover span:nth-child(3) {
+        margin-left: 5px;
+    }
+    .navbar-brand:hover span {
+        color: #000;
+        text-shadow:  
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #fff
+        ;
     }
     .background-title h1{
         font-size: 5rem;
     }
-    .logo:hover span:nth-child(1) {
-        margin-right: 5px;
-    }
-    .logo:hover span:nth-child(2){
-        content:" ";
-    }
-    .logo:hover span:nth-child(3) {
-        margin-left: 5px;
-    }
-    .logo:hover span {
-        color: #000;
-        text-shadow:  
-        0 0 10px #000
-        0 0 20px #000
-        0 0 40px #000
-        ;
-    }
     .img-align-container{
         align-items: center;
         flex-wrap: wrap
-    }
-    .img-item:hover {
-        transform: scale(1.1);
     }
     .rp-audio {
         width: 50%;
@@ -313,9 +306,6 @@ h3 {
     .grid-img {
         width: 20rem;
     }
-    .grid-img:hover {
-        transform: scale(1.1);
-    }
     .footer-menu .footer-menu-items {
         align-items: center;
         font-weight: 700;
@@ -323,40 +313,63 @@ h3 {
     }
 }
 @media only screen and (min-width: 692px) and (max-width: 1139.98px){
-    .nav-menu {
-        flex-direction: column;
+    .navbar-brand {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 80%;
+        margin-left: 2rem;
+        letter-spacing: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
     }
-    .menu-items {
-        font-size: 2rem;
+    .navbar-brand span {
+        transition: 0.5s linear;
     }
-    .nav-menu .menu-list {
-        padding: 0.2rem;
+    .navbar-brand:hover span:nth-child(1) {
+        margin-right: 5px;
+    }
+    .navbar-brand:hover span:nth-child(2){
+        content:" ";
+    }
+    .navbar-brand:hover span:nth-child(3) {
+        margin-left: 5px;
+    }
+    .navbar-brand:hover span {
+        color: #000;
+        text-shadow:  
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #fff
+        ;
+    }
+    .navbar-brand span {
+        transition: 0.5s linear;
+    }
+    .navbar-brand:hover span:nth-child(1) {
+        margin-right: 5px;
+    }
+    .navbar-brand:hover span:nth-child(2){
+        content:" ";
+    }
+    .navbar-brand:hover span:nth-child(3) {
+        margin-left: 5px;
+    }
+    .navbar-brand:hover span {
+        color: #000;
+        text-shadow:  
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #fff
+        ;
     }
     .background-title h1 {
         font-size: 13.5rem;
     }
-    .logo:hover span:nth-child(1) {
-        margin-right: 5px;
-    }
-    .logo:hover span:nth-child(2){
-        content:" ";
-    }
-    .logo:hover span:nth-child(3) {
-        margin-left: 5px;
-    }
-    .logo:hover span {
-        color: #000;
-        text-shadow:  
-        0 0 10px #000
-        0 0 20px #000
-        0 0 40px #000
-        ;
-    }
     .img-align-container .img-item {
         margin: 1rem 2rem;
-    }
-    .img-item:hover {
-        transform: scale(1.1);
     }
     .rp-audio {
         width: 50%;
@@ -375,8 +388,5 @@ h3 {
     } 
     .grid-img {
         width: 50%;
-    }
-    .grid-img:hover {
-        transform: scale(1.1);
     }
 }

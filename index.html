@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="preload" href="css/normalize.css" as="style" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="preload" href="css/style.css" as="style" />
@@ -13,28 +14,32 @@
   
   <title>Mazatlán | Home</title>
 </head>
-
 <body>
   <!-- Inicio del header -->
   <header>
-    <nav class="container">
-      <h1 class="logo" alt="Logo"> <span>Maza</span><span>tlán,</span><span>Gro.</span></h1>
-      <ul class="nav-menu">
-        <li class="menu-list"><a class="menu-items" href="index.html">Inicio</a></li>
-        <li class="menu-list"><a class="menu-items" href="historia.html#historia">Historia</a></li>
-        <li class="menu-list"><a class="menu-items" href="cultura.html">Cultura</a></li>
-        <li class="menu-list"><a class="menu-items" href="economia.html">Economía</a></li>
-        <li class="menu-list"><a class="menu-items" href="estacion.html">Estación</a></li>
-      </ul>
+    <nav class=" container navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span>Maza</span><span>tlán,</span><span>Gro</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-3">
+            <a class="nav-link"  href="index.html"">Inicio</a>
+            <a class="nav-link" href="historia.html">Historia</a>
+            <a class="nav-link" href="cultura.html">Cultura</a>
+            <a class="nav-link" href="economia.html">Economía</a>
+            <a class="nav-link" href="estacion.html">Estación</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
   <!-- Fin del header -->
-  <hr>
   <div class="background-title">
     <h1 class="animate__animated animate__bounce">Mazatlán</h1>
   </div>
   <!-- Inicio del main -->
-  <hr />
   <main>
     <h3>Acerca de:</h3>
     <section class="container">
@@ -47,9 +52,26 @@
           Los días martes, en Mazatlán, se realiza un tianguis al que concurren comerciantes de otros pueblos, pero
           existe un mercado permanente.
         </p>
-        <div class="img-container">
-          <img class="img-item" src="Img/arco.jpg" alt="Entrada del pueblo llamado: El arco" />
-          <img class="img-item" src="img/pueblo.jpg" alt="Vista del pueblo desde las montañas" />
+        <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-econo" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/Img/arco.jpg" class="d-block w-100" alt="Arco, entrada al pueblo">
+            </div>
+            <div class="carousel-item">
+              <img src="./Img/pueblo.jpg" class= "d-block w-100" alt="El pueblo, vista desde las montañas">
+            </div>
+            <div class="carousel-item">
+              <img src="/Img/iglesia-2.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </article>
     </section>
@@ -60,7 +82,7 @@
     <nav class="footer-container container">
       <ul class="footer-menu">
         <li class="footer-menu-list"><a class="footer-menu-items" href=index.html">Inicio</a></li>
-        <li class="footer-menu-list"><a class="footer-menu-items" href="historia">Historia</a></li>
+        <li class="footer-menu-list"><a class="footer-menu-items" href="historia.html">Historia</a></li>
         <li class="footer-menu-list"><a class="footer-menu-items" href="cultura.html">Cultura</a></li>
         <li class="footer-menu-list"><a class="footer-menu-items" href="economia.html">Economía</a></li>
         <li class="footer-menu-list"><a class="footer-menu-items" href="estacion.html">Estación</a></li>
@@ -68,6 +90,9 @@
     </nav>
     <h4 class="container">Derechos reservados</h4>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
 </body>
 
 </html>
