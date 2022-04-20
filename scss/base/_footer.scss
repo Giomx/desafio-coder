@@ -1,0 +1,31 @@
+/*---------------Inicio del footer---------------*/
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-icon {
+    width: 70%;
+    height: auto;
+    padding: 1rem;
+}
+.footer-menu, .footer-menu-icon {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer-menu .footer-menu-list {
+    list-style: none;
+}
+.footer-menu .footer-menu-items{
+    text-decoration: none;
+    color: $second-color;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+.container-fluid {
+    padding: 1.5rem 0;
+}
+/*---------------Fin del footer---------------*/

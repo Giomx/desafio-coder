@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+@import '../scss/base/header';
+@import '../scss/base/main';
+@import '../scss/base/footer';
+@import '../scss/components/media-queries';
+@import '../scss/components/variables';

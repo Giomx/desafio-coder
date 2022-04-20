@@ -1,0 +1,93 @@
+@import'../components/variables';
+html{
+    font-size: 62.5%;/*1rem = a 10px*/
+}
+body{
+    font-family: 'Montserrat Alternates', sans-serif;;
+    background-image:linear-gradient(to top, rgb(189, 184, 184) 0%, #fff);
+}  
+h4 {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    color: $second-color;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+} 
+/*---------------Inicio del header---------------*/
+header{
+    background-color: $thir-color;
+    top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    max-width: 114rem;
+    margin: auto auto 0;
+}
+.navbar-brand {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 2rem;
+    letter-spacing: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand span {
+    transition: 0.5s linear;
+}
+.navbar-brand:hover span:nth-child(1) {
+    margin-right: 5px;
+}
+.navbar-brand:hover span:nth-child(2){
+    content:" ";
+}
+.navbar-brand:hover span:nth-child(3) {
+    margin-left: 5px;
+}
+.navbar-brand:hover span {
+    color: $thir-color;
+    text-shadow:  
+    0 0 10px $primary-color,
+    0 0 20px $primary-color,
+    0 0 40px $primary-color
+    ;
+}
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-link {
+    margin: 0 3rem;
+    font-size: 1.5rem;
+    color: $primary-color;
+    text-decoration: none;
+}
+/*---------------Fin del header---------------*/
+/*----------------------Tutulo principal--------------------*/
+.background-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    height: 30vh;
+    color: $primary-color;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ) 
+    ,url(../Img/maza-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+}
+.background-title h1 {
+    font-size: 18rem;
+}
+/*---------------Fin del titulo principal---------------*/

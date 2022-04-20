@@ -1,0 +1,114 @@
+@media only screen and (min-width: 250px) and (max-width: 691.98px){
+    .navbar-brand {
+        text-decoration: none;
+        color: $primary-color;
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 80%;
+        margin-left: 2rem;
+        letter-spacing: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .navbar-brand span {
+        transition: 0.5s linear;
+    }
+    .navbar-brand:hover span:nth-child(1) {
+        margin-right: 5px;
+    }
+    .navbar-brand:hover span:nth-child(2){
+        content:" ";
+    }
+    .navbar-brand:hover span:nth-child(3) {
+        margin-left: 5px;
+    }
+    .navbar-brand:hover span {
+        color: $second-color;
+        text-shadow:  
+        0 0 10px $primary-color,
+        0 0 20px $primary-color,
+        0 0 40px $primary-color
+        ;
+    }
+    .background-title .pal-title{
+        font-size: 5rem;
+    }
+    .img-align-container{
+        align-items: center;
+        flex-wrap: wrap
+    }
+    .rp-audio {
+        width: 50%;
+        margin: 1rem 2rem;
+    }
+    .parr-text{
+        font-size: 1.5rem;
+        margin: 3rem 3rem;
+    } 
+    .footer-menu .footer-menu-items {
+        align-items: center;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .text-muted {
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 692px) and (max-width: 1139.98px){
+    .navbar-brand {
+        text-decoration: none;
+        color: $primary-color;
+        font-size: 1.5rem;
+        font-weight: bold;
+        width: 80%;
+        margin-left: 2rem;
+        letter-spacing: 5px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .navbar-brand span {
+        transition: 0.5s linear;
+    }
+    .navbar-brand:hover span:nth-child(1) {
+        margin-right: 5px;
+    }
+    .navbar-brand:hover span:nth-child(2){
+        content:" ";
+    }
+    .navbar-brand:hover span:nth-child(3) {
+        margin-left: 5px;
+    }
+    .navbar-brand:hover span {
+        color: $second-color;
+        text-shadow:  
+        0 0 10px $primary-color,
+        0 0 20px $primary-color,
+        0 0 40px $primary-color
+        ;
+    }
+    .background-title h1{
+        font-size: 12rem;
+    }
+    .img-align-container .img-item {
+        margin: 1rem 2rem;
+    }
+    .rp-audio {
+        width: 50%;
+        margin: 1rem 2rem;
+    }
+    .parr-text{
+        font-size: 1.5rem;
+        margin: 2rem 2rem;
+    } 
+    .img-align{
+        display: flex ;
+        flex-wrap: wrap;
+    }
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
