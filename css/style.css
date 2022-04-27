@@ -298,11 +298,11 @@ footer {
   .footer-menu .footer-menu-items {
     align-items: center;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .text-muted {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 692px) and (max-width: 1139.98px) {

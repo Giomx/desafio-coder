@@ -2,11 +2,8 @@
     .navbar-brand {
         text-decoration: none;
         color: $primary-color;
-        font-size: 1.5rem;
-        font-weight: bold;
-        width: 80%;
-        margin-left: 2rem;
-        letter-spacing: 5px;
+        @include font(1.5rem);
+        @extend %val-nav;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -40,33 +37,33 @@
     }
     .rp-audio {
         width: 50%;
-        margin: 1rem 2rem;
+        @include margin(1rem 2rem);
     }
     .parr-text{
-        font-size: 1.5rem;
-        margin: 3rem 3rem;
+        @include font(1.5rem);
+        @include margin(3rem 3rem);
     } 
     .footer-menu .footer-menu-items {
-        align-items: center;
+        align-items: map-get($perfil-second, a-item-second);
         font-weight: 700;
-        font-size: 1rem;
+        @include font(1rem);
     }
     .text-muted {
-        font-size: 1rem;
+        @include font(1rem);
     }
 }
 @media only screen and (min-width: 692px) and (max-width: 1139.98px){
     .navbar-brand {
         text-decoration: none;
         color: $primary-color;
-        font-size: 1.5rem;
+        @include font(1.5rem);
         font-weight: bold;
         width: 80%;
         margin-left: 2rem;
         letter-spacing: 5px;
         cursor: pointer;
-        display: flex;
-        align-items: center;
+        display: map-get($perfil-second, display-second);
+        align-items: map-get($perfil-second, a-item-second);
     }
     .navbar-brand span {
         transition: 0.5s linear;
@@ -89,26 +86,26 @@
         ;
     }
     .background-title h1{
-        font-size: 12rem;
+        @include font(12rem);
     }
     .img-align-container .img-item {
-        margin: 1rem 2rem;
+        @include margin(1rem 2rem);
     }
     .rp-audio {
         width: 50%;
-        margin: 1rem 2rem;
+        @include margin(1rem 2rem);
     }
     .parr-text{
-        font-size: 1.5rem;
-        margin: 2rem 2rem;
+        @include font(1.5rem);
+        @include margin(2rem 2rem);
     } 
     .img-align{
-        display: flex ;
-        flex-wrap: wrap;
+        display: map-get($perfil-one, display-one) ;
+        flex-wrap: map-get($perfil-one, f-wrap);
     }
     .footer-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: map-get($perfil-second, display-second);
+        flex-direction:  map-get($perfil-second, fd-second);
+        align-items: map-get($perfil-second, a-item-second);
     }
 }

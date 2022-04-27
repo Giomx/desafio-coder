@@ -1,0 +1,9 @@
+@mixin font($value-font){
+    font-size: $value-font;
+}
+@mixin padding($value-padding){
+    padding: $value-padding;
+}
+@mixin margin($value-margin) {
+    margin: $value-margin;
+}
