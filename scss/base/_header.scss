@@ -9,7 +9,7 @@ body{
 h4 {
     @include font(1.5rem);
     @include margin(2rem 0);
-    color: $second-color;
+    color: red;
     font-weight: bold;
     display: map-get($perfil-one, display-one);
     justify-content: map-get($perfil-one, jc-one);
