@@ -31,6 +31,20 @@
     .background-title .pal-title{
         font-size: 5rem;
     }
+    .card-container {
+        display: flex;
+        justify-content: center;
+    }
+    .card-items {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-items .face{
+        width: 20rem;
+        height: 25rem;
+    }
     .img-align-container{
         align-items: center;
         flex-wrap: wrap
@@ -87,6 +101,11 @@
     }
     .background-title h1{
         @include font(12rem);
+    }
+    .card-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end; 
     }
     .img-align-container .img-item {
         @include margin(1rem 2rem);
