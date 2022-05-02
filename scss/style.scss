@@ -5,10 +5,10 @@
     padding:0;
 }
 @import '../scss/base/header';
-@import '/scss/base/main';
+@import '../scss/base/main';
 @import '../scss/base/footer';
 @import '../scss/components/extends';
-@import '../scss/base/maps';
+@import '../scss/components/maps';
 @import '../scss/components/mixins';
 @import '../scss/components/media-queries';
 @import '../scss/components/variables';

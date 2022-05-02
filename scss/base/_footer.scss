@@ -1,4 +1,10 @@
 /*---------------Inicio del footer---------------*/
+h6 {
+    font-size: 1.6;
+    display: map-get($perfil-one, display-one);
+    justify-content: map-get($perfil-one, jc-one);
+
+}
 .footer-container {
     display: map-get($perfil-second, display-second);
     justify-content: space-between;
@@ -20,6 +26,7 @@
 .footer-menu .footer-menu-items{
     text-decoration: none;
     color: $second-color;
+    font-size: 1.5rem;
     padding: 0.5rem;
     display: map-get($perfil-second, display-second);
     flex-direction:  map-get($perfil-second, fd-second);

@@ -16,7 +16,8 @@ body {
 }
 
 h4 {
-  font-size: 1.5rem;
+  text-align: center;
+  font-size: 2.5rem;
   margin: 2rem 0;
   color: #000;
   font-weight: bold;
@@ -32,19 +33,10 @@ header {
   justify-content: center;
 }
 
-.container {
-  max-width: 114rem;
-  margin: auto auto 0;
-}
-
 .navbar-brand {
   text-decoration: none;
   color: #fff;
   font-size: 2rem;
-  font-weight: bold;
-  width: 80%;
-  margin-left: 2rem;
-  letter-spacing: 5px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -78,7 +70,7 @@ header {
 
 .nav-link {
   margin: 0 3rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #fff;
   text-decoration: none;
 }
@@ -110,7 +102,7 @@ h3 {
   font-weight: bold;
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #000;
   margin: 2rem 0 2rem 2rem;
 }
@@ -188,6 +180,81 @@ footer {
   margin: 1rem 2rem;
 }
 
+/*-------------------- Inicio del Card --------------------*/
+.card-container {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-items {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.card-items .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card-items .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card-items .front img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.card-items .front h4 {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4.5rem;
+  color: #000;
+  line-height: 4.5rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0));
+}
+
+.card-items .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #212529;
+  padding: 1.5rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #fff;
+}
+
+.card-items .back h4 {
+  letter-spacing: 1px;
+}
+
+.card-items:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card-items:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+/*-------------------- Fin del Card --------------------*/
 .card-img-top {
   width: 80%;
   height: auto;
@@ -199,12 +266,18 @@ footer {
 }
 
 .text-parr {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: justify;
 }
 
 /* ------------------- Fin del main ------------------------ */
 /*---------------Inicio del footer---------------*/
+h6 {
+  font-size: 1.6;
+  display: flex;
+  justify-content: center;
+}
+
 .footer-container {
   display: flex;
   justify-content: space-between;
@@ -230,10 +303,11 @@ footer {
 .footer-menu .footer-menu-items {
   text-decoration: none;
   color: #000;
+  font-size: 1.5rem;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  font-size: 1.6rem;
+  padding: 0.5rem;
 }
 
 .container-fluid {
@@ -241,15 +315,23 @@ footer {
 }
 
 /*---------------Fin del footer---------------*/
+.container {
+  max-width: 114rem;
+  margin: auto auto 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  width: 80%;
+  margin-left: 2rem;
+  letter-spacing: 5px;
+}
+
 @media only screen and (min-width: 250px) and (max-width: 691.98px) {
   .navbar-brand {
     text-decoration: none;
     color: #fff;
     font-size: 1.5rem;
-    font-weight: bold;
-    width: 80%;
-    margin-left: 2rem;
-    letter-spacing: 5px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -280,6 +362,23 @@ footer {
     font-size: 5rem;
   }
 
+  .card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-items {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-items .face {
+    width: 20rem;
+    height: 25rem;
+  }
+
   .img-align-container {
     align-items: center;
     flex-wrap: wrap;
@@ -298,11 +397,11 @@ footer {
   .footer-menu .footer-menu-items {
     align-items: center;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .text-muted {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 692px) and (max-width: 1139.98px) {
@@ -342,6 +441,12 @@ footer {
 
   .background-title h1 {
     font-size: 12rem;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
   }
 
   .img-align-container .img-item {

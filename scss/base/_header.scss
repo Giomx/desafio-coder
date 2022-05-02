@@ -1,4 +1,6 @@
-@import'../components/variables';
+@import '../components/maps';
+@import '../components/variables';
+@import '../components/mixins';
 html{
     font-size: 62.5%;/*1rem = a 10px*/
 }
@@ -7,9 +9,10 @@ body{
     background-image:linear-gradient(to top, rgb(189, 184, 184) 0%, #fff);
 }  
 h4 {
-    @include font(1.5rem);
-    @include margin(2rem 0);
-    color: red;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: $second-color;
     font-weight: bold;
     display: map-get($perfil-one, display-one);
     justify-content: map-get($perfil-one, jc-one);
@@ -59,7 +62,7 @@ header{
 }
 .nav-link {
     @include margin(0 3rem);
-    @include font(1.8rem);
+    @include font(1.7rem);
     color: $primary-color;
     text-decoration: none;
 }
