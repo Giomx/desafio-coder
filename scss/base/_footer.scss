@@ -6,6 +6,7 @@ h6 {
 
 }
 .footer-container {
+    margin-top: 3rem;
     display: map-get($perfil-second, display-second);
     justify-content: space-between;
     align-items: map-get($perfil-second, a-item-second);
@@ -26,7 +27,7 @@ h6 {
 .footer-menu .footer-menu-items{
     text-decoration: none;
     color: $second-color;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 0.5rem;
     display: map-get($perfil-second, display-second);
     flex-direction:  map-get($perfil-second, fd-second);
