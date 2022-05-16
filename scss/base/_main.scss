@@ -48,6 +48,7 @@ footer{
     transform: scale(1.1);
 }
 .img-align-container {
+    margin-bottom: 3rem;
     display: map-get($perfil-one, display-one);
     justify-content: map-get($perfil-one, jc-one);
 }
